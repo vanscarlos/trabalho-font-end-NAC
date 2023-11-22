@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pag2.css">
+    <script src="js/index.js" defer></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <form id="regForm" action="/action_page.php">
+        <h1>Cadastro:</h1>
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">Nome:
+          <p><input placeholder="Primeiro nome..." oninput="this.className = ''" name="fname"></p>
+          <p><input placeholder="Sobrenome..." oninput="this.className = ''" name="lname"></p>
+        </div>
+
+        <div class="tab">Info:
+          <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+          <p><input placeholder="Telefone..." oninput="this.className = ''" name="phone"></p>
+        </div>
+
+        <div class="tab">Info documentos:
+          <p><input placeholder="RG..." oninput="this.className = ''" name="fname"></p>
+          <p><input placeholder="CPF..." oninput="this.className = ''" name="lname"></p>
+        </div>
+
+        <div class="tab">Data de nascimento:
+          <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+          <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+          <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+        </div>
+
+        <div class="tab">Login Info:
+          <p><input placeholder="Apelido..." oninput="this.className = ''" name="uname"></p>
+          <p><input placeholder="Senha..." oninput="this.className = ''" name="pword" type="password"></p>
+        </div>
+
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
+          </div>
+        </div>
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+</body>
+</html>

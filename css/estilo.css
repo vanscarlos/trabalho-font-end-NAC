@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(219, 218, 218);
+}
+
+.header{
+    background-color: rgb(14, 19, 88);
+    position: relative;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    color:rgb(255, 255, 255);
+}
+
+.header img{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    padding-top: 1.1%;
+    right: 30%;
+}
+
+.form{
+    position: relative;
+    width: 50%;
+    left: 25%;
+    top:40px;
+    border-radius: 8px;
+    background-color: rgba(110, 126, 168, 0.418);  
+}
+
+.form legend{
+    font-size: 3vw;
+    font-size-adjust: auto;
+    color: rgb(0, 0, 0);
+    font-family: 'Brush Script MT', cursive;
+}
+
+.form fieldset{
+    border: 1px solid rgb(0, 0, 0); 
+}
+
+.form div{
+    display: block;
+    padding-top: 15px;
+}
+
+input[type=text], input[type=password], select{
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0); 
+    border-radius: 8px;
+}
+
+textarea{
+    width: 100%;
+    height:80px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    resize: none;
+}
+
+input[type=submit], [type=reset]{
+    background-color: rgb(55, 78, 112); 
+    color: aliceblue;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 15%;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(49, 80, 52);
+}
+
+input[type=reset]:hover{
+    background-color: rgb(104, 25, 25);
+}
